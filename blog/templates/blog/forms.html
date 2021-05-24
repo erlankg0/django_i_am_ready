@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I working with forms.</title>
+</head>
+<body>
+<form action="{% url 'blog:datetime' %}" method="post">
+    {% csrf_token %}
+    {{ forms.as_ul }}
+    <input type="submit" value="Add name.">
+</form>
+</body>
+</html>
